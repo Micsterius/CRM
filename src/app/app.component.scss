@@ -49,5 +49,14 @@
         &:hover {
             background-color: rgba(0, 0, 0, 0.5);
         }
+
+        &:focus{
+            outline: none;
+        }
     }
+}
+
+.router-container{
+    padding-left: 56px;
+    padding-top: 16px;
 }

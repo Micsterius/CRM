@@ -5,11 +5,11 @@
     </div>
 
     <ul class="menu-sidenav">
-      <li>
+      <li [routerLink]="['/dashboard']">
         <mat-icon>dashboard</mat-icon>
         Dashboard
       </li>
-      <li>
+      <li [routerLink]="['user']">
         <mat-icon>perm_identity</mat-icon>User
       </li>
     </ul>
@@ -24,6 +24,10 @@
       </mat-toolbar-row>
     </mat-toolbar>
 
+    <div class="router-container">
+      <router-outlet ></router-outlet>
+    </div>
+    
 
   </div>
 
