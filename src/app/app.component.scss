@@ -1,0 +1,12 @@
+.mat-draw-container {
+    height: 100vh;
+}
+
+.menu-icon {
+    margin-right: 16px;
+
+    &:hover {
+        cursor: pointer;
+        scale: 1.4;
+    }
+}
