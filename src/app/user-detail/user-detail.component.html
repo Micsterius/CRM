@@ -1,13 +1,26 @@
 <mat-card class="bg-color-angular-pink user-detail-header-box">
-    
- <img class="profil-image" src="./../../assets/img/profil/icon_male_2.png">
-<div class="user-details">
-    <h2>{{user.firstName}} {{user.lastName}}</h2>
-    {{user.mail}}
-</div>
+    <button mat-icon-button class="pin-right-upper-corner">
+        <mat-icon [matMenuTriggerFor]="userMenu">more_vert</mat-icon>
+        <mat-menu #userMenu="matMenu">
+            <button mat-menu-item (click)="editUserDetail()">edit</button>
+        </mat-menu>
+    </button>
+
+    <img class="profil-image" src="./../../assets/img/profil/icon_male_2.png">
+    <div class="user-details">
+        <h2>{{user.firstName}} {{user.lastName}}</h2>
+        {{user.mail}}
+    </div>
 </mat-card>
 
 <mat-card class="bg-color-angular-pink mt32">
+    <button mat-icon-button class="pin-right-upper-corner">
+        <mat-icon [matMenuTriggerFor]="addressMenu">more_vert</mat-icon>
+        <mat-menu #addressMenu="matMenu">
+            <button mat-menu-item (click)="editAddressDetail()">edit</button>
+        </mat-menu>
+    </button>
+
     <mat-card-header>
         <mat-card-title>Address</mat-card-title>
     </mat-card-header>

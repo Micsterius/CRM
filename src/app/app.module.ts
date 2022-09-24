@@ -28,6 +28,9 @@ import {MatTableModule} from '@angular/material/table';
 import { UsersTableComponent } from './users-table/users-table.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
+import { DialogEditAddressComponent } from './dialog-edit-address/dialog-edit-address.component';
+import { DialogEditUserComponent } from './dialog-edit-user/dialog-edit-user.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import {MatCardModule} from '@angular/material/card';
     UserComponent,
     DialogAddUserComponent,
     UsersTableComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    DialogEditAddressComponent,
+    DialogEditUserComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,8 @@ import {MatCardModule} from '@angular/material/card';
     AngularFirestoreModule,
     MatProgressBarModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

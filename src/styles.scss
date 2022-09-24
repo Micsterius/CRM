@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+$mainColor: #c2185b;
 
 html,
 body {
@@ -21,7 +22,7 @@ body {
 }
 
 .bg-color-angular-pink{
-    background-color: rgba($color: #c2185b, $alpha: 0.6);
+    background-color: rgba($color: $mainColor, $alpha: 0.6);
 }
 
 .mt32 {
