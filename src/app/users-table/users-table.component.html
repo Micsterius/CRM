@@ -2,25 +2,25 @@
     <!-- Position Column -->
     <ng-container matColumnDef="position">
       <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-      <mat-cell *matCellDef="let users"> {{users.id}} </mat-cell>
+      <mat-cell [routerLink]="['/user/'+users.customIdName]" *matCellDef="let users"> {{users.id}} </mat-cell>
     </ng-container>
   
     <!-- Name Column -->
     <ng-container matColumnDef="lastName">
       <mat-header-cell *matHeaderCellDef> Last name </mat-header-cell>
-      <mat-cell *matCellDef="let users"> {{users.lastName}} </mat-cell>
+      <mat-cell [routerLink]="['/user/'+users.customIdName]" *matCellDef="let users"> {{users.lastName}} </mat-cell>
     </ng-container>
   
     <!-- Weight Column -->
     <ng-container matColumnDef="firstName">
       <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
-      <mat-cell *matCellDef="let users"> {{users.firstName}} </mat-cell>
+      <mat-cell [routerLink]="['/user/'+users.customIdName]" *matCellDef="let users"> {{users.firstName}} </mat-cell>
     </ng-container>
   
     
     <ng-container matColumnDef="city">
-      <mat-header-cell *matHeaderCellDef> City </mat-header-cell>
-      <mat-cell *matCellDef="let users"> {{users.city}} </mat-cell>
+      <mat-header-cell *matHeaderCellDef> Mail </mat-header-cell>
+      <mat-cell [routerLink]="['/user/'+users.customIdName]" *matCellDef="let users"> {{users.mail}} </mat-cell>
     </ng-container>
   <!-- Symbol Column -->
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

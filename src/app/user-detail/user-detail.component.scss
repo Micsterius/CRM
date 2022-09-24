@@ -1,0 +1,25 @@
+.user-detail-header-box {
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.profil-image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.user-details {
+    margin-left: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+
+    h2 {
+        margin-bottom: 0;
+    }
+}

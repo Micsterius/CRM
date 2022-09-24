@@ -8,25 +8,34 @@
         <mat-label>First name</mat-label>
         <input [disabled]="loading" [(ngModel)]="user.firstName" matInput placeholder="Placeholder">
         <!-- <mat-hint>Please enter a name</mat-hint> -->
-  
+
       </mat-form-field>
+
       <mat-form-field appearance="outline">
         <mat-label>Last name</mat-label>
         <input [disabled]="loading" [(ngModel)]="user.lastName" matInput placeholder="Placeholder">
         <!-- <mat-hint>Please enter a name</mat-hint> -->
       </mat-form-field>
     </div>
-  
+    <div>
+      <mat-form-field class="mr-16" appearance="outline" class="full-width">
+        <mat-label>E-Mail</mat-label>
+        <input [disabled]="loading" [(ngModel)]="user.mail" matInput placeholder="Placeholder">
+        <!-- <mat-hint>Please enter a mail</mat-hint> -->
+
+      </mat-form-field>
+    </div>
     <div>
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Birth date</mat-label>
-        <input [disabled]="loading" [(ngModel)]="birthDate" matInput placeholder="Placeholder" [matDatepicker]="datepicker">
+        <input [disabled]="loading" [(ngModel)]="birthDate" matInput placeholder="Placeholder"
+          [matDatepicker]="datepicker">
         <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
         <mat-datepicker #datepicker></mat-datepicker>
         <!-- <mat-hint>Please enter a date</mat-hint> -->
       </mat-form-field>
     </div>
-  
+
     <div>
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Street + House no.</mat-label>
@@ -46,10 +55,10 @@
         <!-- <mat-hint>Please enter a date</mat-hint> -->
       </mat-form-field>
     </div>
-  
+
   </div>
   <div mat-dialog-actions>
-    <button [disabled]="loading" mat-button>Cancel</button>
+    <button [disabled]="loading" mat-button (click)="closeDialog()">Cancel</button>
     <button [disabled]="loading" mat-button (click)="saveUser()" [mat-dialog-close]="" cdkFocusInitial>Save</button>
   </div>
 </div>

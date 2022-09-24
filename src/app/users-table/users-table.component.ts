@@ -23,7 +23,7 @@ export class UsersTableComponent {
   ngOnInit(): void {
     this.firestore
       .collection('users')
-      .valueChanges()
+      .valueChanges({idField: 'customIdName'})
       .subscribe((changes: any) => {
         console.log('received changes', changes[0]);
       //   this.putTheLastAddedUserToTheEnd(changes)
