@@ -24,12 +24,16 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
+import {MatTableModule} from '@angular/material/table';
+import { UsersTableComponent } from './users-table/users-table.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     UserComponent,
-    DialogAddUserComponent
+    DialogAddUserComponent,
+    UsersTableComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
