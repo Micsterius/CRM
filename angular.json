@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "crm:build:production",
+            "firebaseProject": "simple-crm-bad42",
+            "firebaseHostingSite": "simple-crm-bad42"
+          }
         }
       }
     }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "simple-crm-bad42": {
+      "hosting": {
+        "crm": [
+          "simple-crm-bad42"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "simple-crm-bad42"
+  }
+}
